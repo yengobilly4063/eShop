@@ -1,0 +1,26 @@
+{
+  "name": "eshop",
+  "version": "1.0.0",
+  "description": "eShop API server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon backend/server.js --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yengobilly4063/eShop.git"
+  },
+  "author": "Bill Yengo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yengobilly4063/eShop/issues"
+  },
+  "homepage": "https://github.com/yengobilly4063/eShop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
