@@ -18,7 +18,7 @@ const ProductScreen = ({match}) => {
 
   return (
     <>
-      <Link to="/" className="btn btn-light my-3">Go Back</Link>
+      <Link to="/" className="btn btn-light my-3"> <i size={25} class="fas fa-long-arrow-alt-left fa-lg"></i> Back</Link>
       <Row>
         <Col md={6}>
           <Image src={product.image} alt={product.name} fluid></Image>
