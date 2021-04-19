@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-import {Schema} from "mongoose"
+const {Schema} = mongoose
 
 const orderSchema = new Schema({
     user: {

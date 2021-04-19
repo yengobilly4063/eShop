@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-import {Schema} from "mongoose"
+const {Schema} = mongoose
 
 const reviewSchema = new Schema({
   name: {type: String, required: true},
