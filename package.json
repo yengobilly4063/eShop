@@ -5,7 +5,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon backend/server.js --prefix backend"
+    "frontend": "npm run start --prefix frontend",
+    "backend": "nodemon backend/server.js --prefix backend",
+    "dev": "concurrently \" npm run backend \" \" npm run frontend \""
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "concurrently": "^6.0.2",
     "nodemon": "^2.0.7"
   }
 }
