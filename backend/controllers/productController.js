@@ -9,12 +9,6 @@ const getProducts = asyncHandler(async (req, res) => {
   res.json(products)
 })
 
-// THis would still work
-// const getProducts = async(req, res) => {
-//   const products = await Product.find({ })
-//   res.json(products)
-// }
-
 // @desc    Fetch single products
 // @route   GET /api/products/:id
 // @access  public 
