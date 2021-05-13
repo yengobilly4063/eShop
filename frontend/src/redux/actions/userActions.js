@@ -110,7 +110,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) =>  {
     dispatch({
       type: USER_UPDATE_PROFILE_REQUEST
     })
-    const {userLogin: {userInfo}} = getState()
+    let {userLogin: {userInfo}} = getState()
 
     const config = {
       headers: {
@@ -122,6 +122,16 @@ export const updateUserProfile = (user) => async (dispatch, getState) =>  {
 
     dispatch({
       type: USER_UPDATE_PROFILE_SUCCESS,
+      payload: data
+    })
+
+    dispatch({
+      type: USER_DETAILS_SUCCESS,
+      payload: data
+    })
+
+    dispatch({
+      type: USER_LOGIN_SUCCESS,
       payload: data
     })
 

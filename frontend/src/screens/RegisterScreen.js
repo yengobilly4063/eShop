@@ -45,7 +45,7 @@ const RegisterScreen = ({location, history}) => {
       {error && <Message variant="danger">{error}</Message>}
       {loading && <Loader />}
       <Form onSubmit={onSubmitHandler}>
-        <Form.Group controlId="email">
+        <Form.Group controlId="name">
           <Form.Label>Name:</Form.Label>
           <Form.Control type="text" placeholder="Enter Name..."
           value={name} onChange={(e) => setName(e.target.value)}>

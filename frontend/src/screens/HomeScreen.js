@@ -17,10 +17,9 @@ const HomeScreen = () => {
     dispatch(listProducts())
   }, [dispatch])
 
+
   return (
     <>
-      
-      
       <h1>Latest Products</h1>
       {
       loading ? <Loader /> : 
