@@ -39,12 +39,9 @@ const ProfileScreen = ({location, history}) => {
   const onSubmitHandler = (e) => {
     setMessage(null)
     e.preventDefault()
-    if(!password || !confirmPassword){
-      setMessage("Password fields cannot be empty")
-      return
-    }
     if(password !== confirmPassword){
       setMessage("Passwords do not match")
+      return
     }else{
       setMessage("")
       dispatch(updateUserProfile({id:user._id, name, email, password}))

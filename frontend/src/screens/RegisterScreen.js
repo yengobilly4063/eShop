@@ -7,6 +7,7 @@ import Loader from "../components/Loader"
 import FormContainer from "../components/FormContainer"
 import {register} from "../redux/actions/userActions"
 
+
 const RegisterScreen = ({location, history}) => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")

@@ -125,6 +125,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) =>  {
       payload: data
     })
 
+    // Now we update the other states to reflect the change in User data
     dispatch({
       type: USER_DETAILS_SUCCESS,
       payload: data
